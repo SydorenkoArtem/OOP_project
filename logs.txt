@@ -1,0 +1,22 @@
+2021-03-23 22:24:19.980833    ValueError:
+ Traceback (most recent call last):
+  File "C:\Users\artem\PycharmProjects\oop_2\app.py", line 12, in <module>
+    egor = Programmer('Egor', 150, 'egor@gmail.com', ['JS', 'Python', 'PHP', 'HTML', 'SQL'])
+  File "C:\Users\artem\PycharmProjects\oop_2\models.py", line 75, in __init__
+    super().__init__(name, salary_day, email)
+  File "C:\Users\artem\PycharmProjects\oop_2\models.py", line 17, in __init__
+    self.validate_email(email)
+  File "C:\Users\artem\PycharmProjects\oop_2\models.py", line 55, in validate_email
+    raise ValueError('Email already exists')
+ValueError: Email already exists
+
+ 
+2021-03-23 22:24:19.996459    UnableToWorkException:
+ Traceback (most recent call last):
+  File "C:\Users\artem\PycharmProjects\oop_2\app.py", line 35, in <module>
+    veronika.work()
+  File "C:\Users\artem\PycharmProjects\oop_2\models.py", line 110, in work
+    raise UnableToWorkException("I'm not hired yet, lol.")
+models.UnableToWorkException: I'm not hired yet, lol.
+
+ 
